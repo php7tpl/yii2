@@ -1,0 +1,38 @@
+#%RAML 1.0
+title: Dev
+version: v1
+protocols: [ HTTP, HTTPS ]
+baseUri: http://test-api.dev.kz/v1
+
+mediaType: [ application/json ]
+
+securitySchemes:
+  Auth: !include ../../../vendor/yii2bundle/yii2-rest/src/domain/docs/securitySchemes/base.raml
+#securedBy: [ Auth ]
+
+traits: !include ../../../vendor/yii2bundle/yii2-rest/src/domain/docs/traits/index.raml
+
+/auth: !include ../../../vendor/yii2rails/yii2-extension/yusrc/account/src/api/v2/docs/auth/api.raml
+/registration: !include ../../../vendor/yii2rails/yii2-extension/yusrc/account/src/api/v2/docs/registration/api.raml
+/restore-password: !include ../../../vendor/yii2rails/yii2-extension/yusrc/account/src/api/v2/docs/restore-password/api.raml
+/security/password: !include ../../../vendor/yii2rails/yii2-extension/yusrc/account/src/api/v2/docs/change-password/api.raml
+#/security/email: !include ../../../vendor/yii2rails/yii2-extension/yusrc/account/src/api/v2/docs/change-email/api.raml
+/person: !include ../../../vendor/yii2rails/yii2-extension/yusrc/user/src/api/v1/docs/person/api.raml
+
+/settings: !include ../../../vendor/yii2bundle/yii2-settings/src/api/v1/docs/personal/api.raml
+/settings-system: !include ../../../vendor/yii2bundle/yii2-settings/src/api/v1/docs/system/api.raml
+
+/staff-worker: !include ../../../vendor/yii2rails/yii2-extension/yusrc/staff/src/api/v1/docs/staff-worker/api.raml
+/staff-division: !include ../../../vendor/yii2rails/yii2-extension/yusrc/staff/src/api/v1/docs/staff-division/api.raml
+/staff-post: !include ../../../vendor/yii2rails/yii2-extension/yusrc/staff/src/api/v1/docs/staff-post/api.raml
+
+/rbac-role: !include ../../../vendor/yii2bundle/yii2-rbac/src/api/docs/rbac-role/api.raml
+/rbac-permission: !include ../../../vendor/yii2bundle/yii2-rbac/src/api/docs/rbac-permission/api.raml
+/rbac-assignment: !include ../../../vendor/yii2bundle/yii2-rbac/src/api/docs/rbac-assignment/api.raml
+
+#/file-storage: !include ../../../vendor/yii2rails/yii2-extension/yusrc/storage/src/api/docs/file-storage/api.raml
+/storage-personal: !include ../../../vendor/yii2rails/yii2-extension/yusrc/storage/src/api/docs/storage-personal/api.raml
+
+/notify-test: !include ../../../vendor/yii2bundle/yii2-notify/src/api/docs/notify-test/api.raml
+/user-manage: !include ../../../vendor/yii2rails/yii2-extension/yusrc/common/src/dev/api/docs/user-manage/api.raml
+#/meta-entity: !include ../../../vendor/yii2bundle/yii2-model/src/api/v1/docs/meta-entity/api.raml
