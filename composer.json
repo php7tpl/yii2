@@ -40,8 +40,7 @@
 		"fig/link-util": "dev-master",
 		"fig/cache-util": "dev-master",
 		"fig/event-dispatcher-util": "dev-master",
-		"fig/http-message-util": "dev-master",
-		"phpbundle/rest": "dev-master"
+		"fig/http-message-util": "dev-master"
 	},
 	"require-dev": {
 		"yii2tool/yii2-test": "0.32.*",
