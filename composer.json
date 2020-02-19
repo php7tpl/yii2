@@ -40,15 +40,13 @@
 		"fig/link-util": "dev-master",
 		"fig/cache-util": "dev-master",
 		"fig/event-dispatcher-util": "dev-master",
-		"fig/http-message-util": "dev-master",
-		"phpbundle/rest": "dev-master"
+		"fig/http-message-util": "dev-master"
 	},
 	"require-dev": {
 		"yii2tool/yii2-test": "0.32.*",
 		"yii2tool/yii2-guide": "0.4.*",
 		"yii2tool/yii2-vendor": "0.11.*",
-		"yii2tool/yii2-restclient": "0.12.*",
-		"yii2team/guide-team": "0.4.*"
+		"yii2tool/yii2-restclient": "0.12.*"
 	},
 	"config": {
 		"secure-http": false,
